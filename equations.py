@@ -48,14 +48,13 @@ def sqrt (x,y):
 #Question C
 def calculate (x):
     if x == 0 :
-        a = 1
+        a = 0
     else :
         a = 1/x
     result = exponent(x)* XtimesY(7,x)* a * sqrt(x,x)
     result = float('%0.6f' % result)
     return (result)
 
-print(calculate(0))
     
     
     
