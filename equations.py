@@ -1,5 +1,4 @@
 
-
 #Question A
 def exponent (x):
     a = 1
@@ -33,8 +32,10 @@ def XtimesY (x,y):
     result = exponent(y*Ln(x))
     if x < 0 and y%2 != 0:
             result = result * -1
+    if result == 1 :
+        result = 0
     return(result)  
-#print(XtimesY(-2.2,-2))
+
 
 #Question B
 def sqrt (x,y):
