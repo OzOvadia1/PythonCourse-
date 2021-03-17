@@ -30,8 +30,8 @@ def XtimesY (x,y):
         return 0
     result = 0
     result = exponent(y*Ln(x))
-    if x < 0 and y%2 != 0:
-            result = result * -1
+    if y<0 :
+            result = 0
     if result == 1 :
         result = 0
     return(result)  
@@ -55,6 +55,7 @@ def calculate (x):
     result = float('%0.6f' % result)
     return (result)
 
+print(calculate(-1))
     
     
     
