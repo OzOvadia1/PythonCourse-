@@ -28,14 +28,16 @@ def Ln (x):
 def XtimesY (x,y):
     if x == 0 :
         return 0
-    result = 0
     result = exponent(y*Ln(x))
+    if y<0 :
+        result = 0
     if x < 0 and y%2 != 0:
-            result = result * -1
+        result = result * -1
     if result == 1 :
         result = 0
     return(result)  
 
+print(XtimesY(-2,2))
 #Question B
 def sqrt (x,y):
     if y<=0 :
@@ -55,7 +57,7 @@ def calculate (x):
     result = float('%0.6f' % result)
     return (result)
 
-print(calculate(-1))
+#print(calculate(-1))
     
     
     
