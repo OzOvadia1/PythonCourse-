@@ -32,11 +32,10 @@ def XtimesY (x,y):
         return 0
     result = 0
     result = exponent(y*Ln(x))
- #   result = float('%0.6f' % result)
     if x < 0 and y%2 != 0:
             result = result * -1
     return(result)  
-
+print(XtimesY(x,y))
 
 #Question B
 def sqrt (x,y):
