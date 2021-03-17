@@ -30,15 +30,15 @@ def XtimesY (x,y):
         return 0
     result = 0
     result = exponent(y*Ln(x))
-    if y<0 :
-            result = 0
+    if x < 0 and y%2 != 0:
+            result = result * -1
     if result == 1 :
         result = 0
     return(result)  
 
 #Question B
 def sqrt (x,y):
-    if y<=0 and x%2 == 0:
+    if y<=0 :
         return 0
     result = 0
     result = exponent((1/x)*Ln(y))
