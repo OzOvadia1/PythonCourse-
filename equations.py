@@ -36,7 +36,6 @@ def XtimesY (x,y):
         result = 0
     return(result)  
 
-
 #Question B
 def sqrt (x,y):
     if y<=0 and x%2 == 0:
@@ -48,11 +47,15 @@ def sqrt (x,y):
 
 #Question C
 def calculate (x):
-    result = exponent(x)* XtimesY(7,x)* (1/x) * sqrt(x,x)
+    if x == 0 :
+        a = 1
+    else :
+        a = 1/x
+    result = exponent(x)* XtimesY(7,x)* a * sqrt(x,x)
     result = float('%0.6f' % result)
     return (result)
 
-
+print(calculate(0))
     
     
     
