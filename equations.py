@@ -37,7 +37,6 @@ def XtimesY (x,y):
         result = 0
     return(result)  
 
-print(XtimesY(-2,2))
 #Question B
 def sqrt (x,y):
     if y<=0 :
