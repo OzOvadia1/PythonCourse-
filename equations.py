@@ -1,5 +1,3 @@
-x = float(input("Enter X: ") )
-y = float(input("Enter Y: ") )
 
 #Question A
 def exponent (x):
@@ -35,7 +33,7 @@ def XtimesY (x,y):
     if x < 0 and y%2 != 0:
             result = result * -1
     return(result)  
-print(XtimesY(x,y))
+
 
 #Question B
 def sqrt (x,y):
