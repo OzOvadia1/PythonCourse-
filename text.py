@@ -2,7 +2,6 @@
 fhand = open('text.txt')
 inp = fhand.read()
 
-firstword = ""
 def revword (word):
     result = list(word)
     result = result[::-1]
@@ -13,10 +12,11 @@ def revword (word):
 # print(revword('Myfriend'))
 
 length = len(inp.split())
-firstword = inp.split()[0]
+# word = inp.split()[0]
 # print(firstword)
 
 def countword () :
+    word = inp.split()[0]
     equalcounter = 0
     counter = 0
     i = 0
@@ -26,11 +26,14 @@ def countword () :
                 continue
         
         neword = revword(inp.split()[i])
-        print(neword)
-        if neword == firstword:
+        # print(neword)
+        if neword == word:
               equalcounter += 1   
         i += 1
-    return(equalcounter+1)
+    if equalcounter>0:
+       equalcounter += 1
+       
+    return(equalcounter)
 
 # print(countword())
             
